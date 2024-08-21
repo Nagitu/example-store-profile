@@ -12,11 +12,11 @@ export default function Home() {
             <Navbar/>
             <section
                 id="HomeSection"
-                className="flex flex-col md:flex-row items-center m-auto justify-between p-6 h-screen bg-white text-black dark:bg-lightblue">
-                <div className="w-full md:w-1/2 pr-4 mb-8 md:mb-0">
+                className="flex flex-col md:flex-row items-center mt-4 md:mt-2 md:justify-between p-6 h-screen bg-white text-black dark:bg-lightblue">
+                <div className="w-full md:w-1/2 pr-4 ">
                     <ImageCarousel/>
                 </div>
-                <div className="w-full md:w-1/2 pl-4 flex flex-col items-center justify-center">
+                <div className="w-full md:w-1/2 md:pl-4 flex flex-col items-center justify-center">
                     <h2 className=" text-4xl md:text-6xl font-bold mb-4 text-gray-700 leading-tight">
                         Warung
                         <span className="bg-orange-500 text-white px-2">Pecel</span><br/>

@@ -22,11 +22,11 @@ export default function ProductSection() {
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
           Menu Pecel Kami
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 p-2 md:p-4 h-fit">
           {products.map((product) => (
             <Card
               key={product.id}
-              className="max-w-sm"
+              className="max-w-sm max-h-sm"
               renderImage={() => (
                 <Image
                   width={500}
@@ -37,10 +37,10 @@ export default function ProductSection() {
                 />
               )}
             >
-              <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h5 className="text-md md:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {product.title}
               </h5>
-              <p className="font-normal text-gray-700 dark:text-gray-400">
+              <p className="text-sm md:textmd text-gray-700 dark:text-gray-400">
                 {product.description}
               </p>
             </Card>
